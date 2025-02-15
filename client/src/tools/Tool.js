@@ -9,6 +9,7 @@ export default class Tool {
         this.id = id
         this.ctx = canvas.getContext('2d')
         // this.ctx.strokeStyle = 'black'
+        this.destroyListeners()
     }
 
     destroyListeners() {

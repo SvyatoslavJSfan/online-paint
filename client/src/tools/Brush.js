@@ -1,7 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 /* eslint-disable no-useless-constructor */
 import Tool from './Tool'
-import axios from 'axios'
 
 export default class Brush extends Tool {
 

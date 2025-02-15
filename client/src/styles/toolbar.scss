@@ -42,6 +42,11 @@
         background: url('../assets/line.png') no-repeat center center;
     }
 
+    .bucket {
+        margin-right: 20px;
+        background: url('../assets/bucket.png') no-repeat center center;
+    }
+
     .undo {
         margin-left: auto;
         background: url('../assets/undo.png') no-repeat center center;
@@ -53,6 +58,7 @@
 
     .save {
         background: url('../assets/save.png') no-repeat center center;
+        margin-right: 30px;
     }
 
 }

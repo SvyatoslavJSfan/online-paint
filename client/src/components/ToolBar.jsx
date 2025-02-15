@@ -7,6 +7,7 @@ import Circle from '../tools/Circle';
 import Eraser from '../tools/Eraser';
 import Line from '../tools/Line';
 import { useParams } from 'react-router-dom';
+import Bucket from '../tools/Bucket';
 
 const ToolBar = () => {
 
@@ -30,6 +31,7 @@ const ToolBar = () => {
             <button className='toolbar__btn circle' onClick={() => ToolState.setTool(new Circle(CanvasState.canvas, CanvasState.socket, CanvasState.sessionId))}></button>
             <button className='toolbar__btn eraser'onClick={() => ToolState.setTool(new Eraser(CanvasState.canvas, CanvasState.socket, CanvasState.sessionId))}></button>
             <button className='toolbar__btn line' onClick={() => ToolState.setTool(new Line(CanvasState.canvas, CanvasState.socket, CanvasState.sessionId))}></button>
+            <button className='toolbar__btn bucket' onClick={() => ToolState.setTool(new Bucket(CanvasState.canvas, CanvasState.socket, CanvasState.sessionId))}></button>
             <input type='color'
             onChange={(e) => ToolState.setFillColor(e.target.value)}
             ></input>
